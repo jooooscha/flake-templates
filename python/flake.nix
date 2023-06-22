@@ -27,6 +27,9 @@
                 # sha256 = "sha256-0aozmQ4Eb5zL4rtNHSFjEynfObUkYlid1PgMDVmRkwY=";
               # };
               # doCheck = false;
+              # buildInputs = []; # pkgs deps
+              # nativeBuildInputs = []; # pkgs deps
+              # propagatedBuildInputs = []; # python deps
             # }
           # )
         ]);
