@@ -7,6 +7,7 @@
 
       basic = {
         path = ./basic;
+        python = ./python;
         description = "A very basic flake";
       };
 
