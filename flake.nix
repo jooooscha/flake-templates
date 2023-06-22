@@ -7,10 +7,12 @@
 
       basic = {
         path = ./basic;
-        python = ./python;
         description = "A very basic flake";
       };
-
+      python = {
+        path = ./python;
+        description = "A very basic python flake";
+      };
     };
 
     defaultTemplate = self.templates.basic;
