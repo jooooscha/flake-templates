@@ -17,7 +17,7 @@
         devShells = {
           default = pkgs.mkShell {
             name = "Nix Shell";
-            packages = [
+            packages = with pkgs; [
             ];
           };
         };
