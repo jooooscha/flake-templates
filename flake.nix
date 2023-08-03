@@ -13,6 +13,10 @@
         path = ./python;
         description = "A very basic python flake";
       };
+      rust = {
+        path = ./rust;
+        description = "A very basic rust flake";
+      };
     };
 
     defaultTemplate = self.templates.basic;
