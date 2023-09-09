@@ -14,10 +14,6 @@
         packaged-python = pkgs.python3.withPackages (p: with p; [
           # Examples
           # pyyaml
-          # matplotlib
-          # numpy
-          # termcolor
-          # configargparse
           # (
             # buildPythonPackage rec {
               # pname = "deserialize";
@@ -40,7 +36,7 @@
 
         devShells.default =
           pkgs.mkShell {
-            name = "Paper Tracker Shell";
+            name = "Python Shell";
             packages = [
               packaged-python
             ];
