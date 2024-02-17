@@ -39,6 +39,7 @@
             name = "Python Shell";
             packages = [
               packaged-python
+              pkgs.nix-init
             ];
           };
       }
