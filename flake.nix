@@ -17,6 +17,10 @@
         path = ./rust;
         description = "A very basic rust flake";
       };
+      latex = {
+        path = ./latex;
+        description = "A very basic latex flake";
+      };
     };
 
     defaultTemplate = self.templates.basic;
