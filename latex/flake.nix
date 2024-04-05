@@ -18,7 +18,10 @@
             name = "Nix Shell";
             packages = with pkgs; [
               tectonic
+              entr
             ];
+            shellHook = ''
+            '';
           };
         };
       }

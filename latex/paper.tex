@@ -1,0 +1,38 @@
+\documentclass[journal,compsoc,10pt]{IEEEtran}
+
+% Load some possibly useful packages. You can remove the ones you don't need or
+% add other packages that you need in your paper.
+\usepackage{graphicx}                   % required to include graphics
+\usepackage{amsfonts,amssymb,amsmath}   % mathsymbols etc
+\usepackage{bm}                         % make any letter boldface in math
+\usepackage{algorithmic}                % algorithm environments (one option) -- feel free to try others
+\usepackage{array}                      % for better looking arrays
+\usepackage{url}                        % for urls
+\usepackage{hyperref}                   % make links and references 'clickable'
+\usepackage[usenames]{xcolor}           % colors for highlighting ect.
+\usepackage{cleveref}                   % smart references to figures, equations ect.
+\usepackage{fontspec}
+% \usepackage[disable]{todonotes}
+\usepackage{todonotes}
+\setuptodonotes{inline}
+\usepackage[numbers]{natbib}
+\usepackage{xcolor}
+
+% you can define your own commands, eg.:
+\newcommand{\comment}[1]{{{\color{blue} #1}}}
+\newcommand{\note}[2]{{{\par\textbf{#1}: #2}}}
+
+\begin{document}
+
+\listoftodos
+
+\section{Main Section}
+
+\newpage
+
+% your literature list as described in `references.bib`
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
+
