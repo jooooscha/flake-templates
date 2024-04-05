@@ -18,6 +18,8 @@
             name = "Nix Shell";
             packages = with pkgs; [
             ];
+            shellHook = ''
+            '';
           };
         };
       }
