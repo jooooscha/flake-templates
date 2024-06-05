@@ -21,6 +21,10 @@
         path = ./latex;
         description = "A very basic latex flake";
       };
+      jupyter = {
+        path = ./jupyter;
+        description = "A very basic jupyter flake";
+      };
     };
 
     defaultTemplate = self.templates.basic;
