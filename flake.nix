@@ -25,6 +25,10 @@
         path = ./jupyter;
         description = "A very basic jupyter flake";
       };
+      pyproject = {
+        path = ./pyproject;
+        description = "A very basic pyproject flake";
+      };
     };
 
     defaultTemplate = self.templates.basic;
