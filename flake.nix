@@ -29,6 +29,7 @@
         path = ./pyproject;
         description = "A very basic pyproject flake";
       };
+      poetry = { path  = ./poetry; };
     };
 
     defaultTemplate = self.templates.basic;
