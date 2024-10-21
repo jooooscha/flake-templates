@@ -29,7 +29,16 @@
         # This example is only using x86_64-linux
         pkgs = import nixpkgs {
           system = system;
-          # overlays = [ ];
+          # overlays = [
+          #   # overriding python3 to include simplematrixbotlib
+          #   (final: prev: {
+          #      python3 = prev.python3.override {
+          #        packageOverrides = pyfinal: pyprev: {
+          #          simplematrixbotlib = simplematrixbotlib;
+          #        };
+          #      };
+          #   })
+          # ];
           # config.permitedInsecurePackages = [ ];
         };
 
