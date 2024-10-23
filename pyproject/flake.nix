@@ -64,7 +64,7 @@
       in
       {
         # Create a development shell containing dependencies from `pyproject.toml`
-        devShells.x86_64-linux.default =
+        devShells.default =
           let
             # Returns a function that can be passed to `python.withPackages`
             arg = project.renderers.withPackages { inherit python; };
@@ -79,7 +79,7 @@
           };
 
         # Build our package using `buildPythonPackage
-        packages.x86_64-linux.default =
+        packages.default =
           let
             # Returns an attribute set that can be passed to `buildPythonPackage`.
             attrs = project.renderers.buildPythonPackage { inherit python; };
