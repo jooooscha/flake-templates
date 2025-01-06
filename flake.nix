@@ -30,6 +30,10 @@
         description = "A very basic pyproject flake";
       };
       poetry = { path  = ./poetry; };
+      python-venv = {
+        path = ./python-venv;
+        description = "A very basic python flake using python venv";
+      };
     };
 
     defaultTemplate = self.templates.basic;
